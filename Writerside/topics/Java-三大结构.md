@@ -283,9 +283,9 @@ for (int i = 0; i < numbers.length; i++) {
 ### continue
 - continue 用于循环语句体中，用于**中止某次循环过程**，即跳过循环体中尚未执行的语句，接着进行下一次判断是否执行下一次循环的判定。
 
-### goto(非java)
+### goto
 - goto 虽然很早就在程序设计语言中出现，尽管goto仍然是java的一个保留字，但并未在语言中得到正式使用。
-- java中没有goto
+- java中没有goto???
 
 
 
