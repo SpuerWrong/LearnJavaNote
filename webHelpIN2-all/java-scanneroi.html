@@ -1,0 +1,33 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-10-21T00:15:55.0009376"><title>Java_ScannerOI | Instance Name</title><script type="application/json" id="virtual-toc-data">[{"id":"scanner_1","level":0,"title":"用户交互Scanner对象","anchor":"#scanner_1"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Java_ScannerOI | Instance Name"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Instance Name Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/java-scanneroi.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Java_ScannerOI | Instance Name"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/java-scanneroi.html#webpage",
+    "url": "writerside-documentation/java-scanneroi.html",
+    "name": "Java_ScannerOI | Instance Name",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Instance Name Help"
+}</script><!-- End Schema.org --></head><body data-id="Java-ScannerOI" data-main-title="Java_ScannerOI" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Instance Name  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Java-ScannerOI" id="Java-ScannerOI.md">Java_ScannerOI</h1><p id="z25e8rb_3">Java 流程控制</p><section class="chapter"><h2 id="scanner_1" data-toc="scanner_1">用户交互Scanner对象</h2><section class="chapter"><h3 id="scanner" data-toc="scanner">Scanner对象</h3><p id="z25e8rb_6">Java提供的可以获取用户输入的工具类，java.util.Scanner是java5新特征</p><div class="code-block" data-lang="java">
+public class Demo01{
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(&quot;使用next方式接收：&quot;);
+        
+        //判断用户有没有输入字符串
+        if(scanner.hasNext()){
+        String str = scanner.next();
+        System.out.println(&quot;输出的内容：&quot;+str);
+        }
+        scanner.close();
+        //凡是属于IO流的类如果不关闭会一直占用资源，要养成
+    }
+}
+</div><p id="z25e8rb_8">基本语法：</p><div class="code-block" data-lang="java">
+Scanner scanner = new Scanner(System.in);
+</div><p id="z25e8rb_10">Scanner对象： <br></p><ol class="list _decimal" id="z25e8rb_11" type="1"><li class="list__item" id="z25e8rb_13"><p>next() 功能：用于读取并返回下一个有效的输入字符或字符串，自动跳过无效字符。 特点： 自动跳过空白字符：next()在读取到有效字符前，会自动跳过空白字符（如空格、换行等）。 有效字符为界：只有在读取到有效字符后，next()才会将后续的空白字符视为分隔符或结束符。 不读取空格：next()无法获取带有空格的字符串，一旦遇到空格就会将其作为分隔符。</p></li><li class="list__item" id="z25e8rb_14"><p>nextLine() 功能：读取一整行输入，直到用户按下 &quot;Enter&quot; 键为止。 特点： 整行读取：nextLine()会读取包括空格在内的整行内容，并将光标移至下一行等待输入。 以Enter结束：在遇到&quot;Enter&quot;之前的所有字符都被视为有效输入。</p></li><li class="list__item" id="z25e8rb_15"><p>nextInt() 功能：用于接收整型（int）数据的输入。 特点： 如果输入不为有效的整数值，程序可能会抛出异常。</p></li><li class="list__item" id="z25e8rb_16"><p>nextDouble() 功能：用于接收双精度浮点型（double）数据的输入。 特点： 输入不为有效的双精度浮点数时，同样会抛出异常。</p></li><li class="list__item" id="z25e8rb_17"><p>nextFloat() 功能：用于接收单精度浮点型（float）数据的输入。 特点： 与nextDouble()类似，专门用于处理float类型输入。</p></li><li class="list__item" id="z25e8rb_18"><p>nextShout() 功能：用于接收shout类型数据的输入（假设这是自定义类型）。 特点：根据上下文可能是一个特别定义的类型，需要具体环境下的说明。</p></li><li class="list__item" id="z25e8rb_19"><p>hasNextInt() 功能：判断是否存在可以解析为int类型的输入。 特点：如果输入内容能够成功转换为int类型，则返回true。</p></li><li class="list__item" id="z25e8rb_20"><p>hasNext() 功能：判断输入流中是否存在下一个有效的字符或字符串。 特点：常用于输入是否结束的检测。</p></li><li class="list__item" id="z25e8rb_21"><p>hasNextLine() 功能：判断输入流中是否还有下一行内容可供读取。 特点：通常用于检测输入是否已读到最后一行。</p></li><li class="list__item" id="z25e8rb_22"><p>hasNextDouble() 功能：判断是否存在可以解析为double类型的数据。 特点：如果输入内容能被成功解析为double类型，则返回true。</p></li><li class="list__item" id="z25e8rb_23"><p>hasNextFloat() 功能：判断是否存在可以解析为float类型的数据。 特点：与hasNextDouble()类似，用于检测float类型的数据输入。</p></li><li class="list__item" id="z25e8rb_24"><p>hasNextShout() 功能：判断是否存在可以解析为shout类型的数据（假设为自定义类型）。 特点：具体行为需参考shout类型的定义。</p></li></ol></section></section><div class="last-modified">Last modified: 20 十月 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="java-one-base.html" class="navigation-links__prev">Java_One(base)</a><a href="java-三大结构.html" class="navigation-links__next">Java_三大结构</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>

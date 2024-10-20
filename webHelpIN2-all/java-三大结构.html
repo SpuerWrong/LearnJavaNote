@@ -1,0 +1,163 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-10-21T00:15:55.3513289"><title>Java_三大结构 | Instance Name</title><script type="application/json" id="virtual-toc-data">[{"id":"java","level":0,"title":"Java的基本控制结构","anchor":"#java"},{"id":"break-continue","level":0,"title":"break 和 continue 关键词","anchor":"#break-continue"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Java_三大结构 | Instance Name"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Instance Name Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/java-三大结构.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Java_三大结构 | Instance Name"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/java-三大结构.html#webpage",
+    "url": "writerside-documentation/java-三大结构.html",
+    "name": "Java_三大结构 | Instance Name",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Instance Name Help"
+}</script><!-- End Schema.org --></head><body data-id="Java-三大结构" data-main-title="Java_三大结构" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Instance Name  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Java-三大结构" id="Java-三大结构.md">Java_三大结构</h1><section class="chapter"><h2 id="java" data-toc="java">Java的基本控制结构</h2><section class="chapter"><h3 id="-9hqol0_5" data-toc="-9hqol0_5">顺序结构</h3><p id="-9hqol0_10">在Java编程中，最基本的结构就是顺序结构。 <span class="control" id="-9hqol0_13">顺序结构</span>指的是代码按照书写顺序，从上到下依次执行，除非遇到跳转、选择或循环等结构。顺序结构是所有程序的基础，也是默认的执行方式。</p><p id="-9hqol0_11">例如：</p><div class="code-block" data-lang="java">
+System.out.println(&quot;开始程序&quot;); // 这行代码会先执行
+System.out.println(&quot;执行代码块&quot;); // 然后执行这一行
+System.out.println(&quot;程序结束&quot;); // 最后执行这一行
+</div></section><section class="chapter"><h3 id="-9hqol0_6" data-toc="-9hqol0_6">选择结构</h3><p id="-9hqol0_14">选择结构是一种根据条件判断执行不同代码块的结构。Java中常见的选择结构包括 <code class="code" id="-9hqol0_20">if</code> 语句和 <code class="code" id="-9hqol0_21">switch</code> 语句。</p><section class="chapter"><h4 id="if_1" data-toc="if_1">if 单选择结构</h4><p id="-9hqol0_22">单选择结构是最简单的条件判断结构，根据一个条件是否成立来决定是否执行代码块。</p><p id="-9hqol0_23">语法：</p><div class="code-block" data-lang="java">
+if(条件){
+    // 当条件为 true 时执行这段代码
+}
+</div><p id="-9hqol0_25">示例：</p><div class="code-block" data-lang="java">
+int number = 5;
+if(number &gt; 3){
+    System.out.println(&quot;数字大于3&quot;);
+}
+</div><p id="-9hqol0_27">在这个例子中，如果 <code class="code" id="-9hqol0_28">number</code> 大于3，程序就会打印 &quot;数字大于3&quot;。</p></section><section class="chapter"><h4 id="if_2" data-toc="if_2">if 双选择结构</h4><p id="-9hqol0_29">双选择结构不仅在条件成立时执行代码，还会在条件不成立时执行另一段代码。</p><p id="-9hqol0_30">语法：</p><div class="code-block" data-lang="java">
+if(条件){
+    // 当条件为 true 时执行这段代码
+} else {
+    // 当条件为 false 时执行这段代码
+}
+</div><p id="-9hqol0_32">示例：</p><div class="code-block" data-lang="java">
+int number = 2;
+if(number &gt; 3){
+    System.out.println(&quot;数字大于3&quot;);
+} else {
+    System.out.println(&quot;数字小于或等于3&quot;);
+}
+</div><p id="-9hqol0_34">在这个例子中，程序会打印 &quot;数字小于或等于3&quot;。</p></section><section class="chapter"><h4 id="if" data-toc="if">if 多选择结构</h4><p id="-9hqol0_35">如果有多个条件需要判断，使用 <code class="code" id="-9hqol0_41">if-else if</code> 语句。程序会从上到下依次判断条件，直到某个条件为 <code class="code" id="-9hqol0_42">true</code> 执行对应代码块，或者执行最后的 <code class="code" id="-9hqol0_43">else</code> 块。</p><p id="-9hqol0_36">语法：</p><div class="code-block" data-lang="java">
+if(条件1){
+    // 条件1为 true 时执行
+} else if(条件2){
+    // 条件2为 true 时执行
+} else if(条件n){
+    // 条件n为 true 时执行
+} else {
+    // 当所有条件都不满足时执行
+}
+</div><p id="-9hqol0_38">示例：</p><div class="code-block" data-lang="java">
+int score = 85;
+if(score &gt;= 90){
+    System.out.println(&quot;优秀&quot;);
+} else if(score &gt;= 80){
+    System.out.println(&quot;良好&quot;);
+} else if(score &gt;= 70){
+    System.out.println(&quot;合格&quot;);
+} else {
+    System.out.println(&quot;不合格&quot;);
+}
+</div><p id="-9hqol0_40">程序会根据 <code class="code" id="-9hqol0_44">score</code> 的值打印相应的等级。</p></section><section class="chapter"><h4 id="if_3" data-toc="if_3">嵌套if语句</h4><p id="-9hqol0_45"><code class="code" id="-9hqol0_51">if</code> 语句是可以嵌套的，即在一个 <code class="code" id="-9hqol0_52">if</code> 语句内部再使用 <code class="code" id="-9hqol0_53">if</code> 或 <code class="code" id="-9hqol0_54">if-else</code> 结构。当逻辑较为复杂时，可以通过嵌套 <code class="code" id="-9hqol0_55">if</code> 语句处理。</p><p id="-9hqol0_46">语法：</p><div class="code-block" data-lang="java">
+if(条件1){
+    if(条件2){
+        // 条件1和条件2都为 true 时执行
+    } else {
+        // 条件1为 true 且条件2为 false 时执行
+    }
+} else {
+    // 条件1为 false 时执行
+}
+</div><p id="-9hqol0_48">示例：</p><div class="code-block" data-lang="java">
+int age = 20;
+int height = 180;
+if(age &gt; 18){
+    if(height &gt; 170){
+        System.out.println(&quot;成年且身高大于170cm&quot;);
+    } else {
+        System.out.println(&quot;成年但身高小于或等于170cm&quot;);
+    }
+} else {
+    System.out.println(&quot;未成年&quot;);
+}
+</div><p id="-9hqol0_50">在这个例子中，程序会检查年龄是否大于18岁，然后再检查身高是否大于170cm。根据不同的条件，程序会打印不同的结果。</p></section><section class="chapter"><h4 id="switch" data-toc="switch">switch 多选择结构</h4><p id="-9hqol0_56">多选择结构还有一个实现方式： <code class="code" id="-9hqol0_63">switch</code> <code class="code" id="-9hqol0_64">case</code> 语句。 <br><code class="code" id="-9hqol0_66">switch</code> 语句用于判断一个变量的值，并根据这个值与多个 <code class="code" id="-9hqol0_67">case</code> 分支的匹配情况执行对应的代码。</p><p id="-9hqol0_57">语法格式：</p><div class="code-block" data-lang="java">
+char grade = 'C';
+switch (grade) {
+    case 'A':
+        System.out.println(&quot;优秀&quot;);
+        break;
+    case 'B':
+        System.out.println(&quot;良好&quot;);
+        break;
+    case 'C':
+        System.out.println(&quot;及格&quot;);
+        break;
+    case 'D':
+        System.out.println(&quot;不及格&quot;);
+        break;
+    default:
+        System.out.println(&quot;输入错误&quot;);
+}
+</div><ul class="list _bullet" id="-9hqol0_59"><li class="list__item" id="-9hqol0_68"><p><code class="code" id="-9hqol0_70">break</code> 的作用：中止当前 <code class="code" id="-9hqol0_71">case</code> 分支的执行，防止程序执行下一个 <code class="code" id="-9hqol0_72">case</code> 语句，也就是防止&ldquo;穿透&rdquo;。如果没有 <code class="code" id="-9hqol0_73">break</code> ，程序会继续执行下一个 <code class="code" id="-9hqol0_74">case</code> ，即使它不满足条件。</p></li><li class="list__item" id="-9hqol0_69"><p><code class="code" id="-9hqol0_75">default</code> 的作用：当所有 <code class="code" id="-9hqol0_76">case</code> 分支都不匹配时，执行 <code class="code" id="-9hqol0_77">default</code> 代码块，类似于 <code class="code" id="-9hqol0_78">else</code> 语句。</p></li></ul><p id="-9hqol0_60"><span class="control" id="-9hqol0_79">额外提示</span>：</p><ul class="list _bullet" id="-9hqol0_61"><li class="list__item" id="-9hqol0_80"><p>从JDK 7开始， <code class="code" id="-9hqol0_81">switch</code> 语句支持 <code class="code" id="-9hqol0_82">String</code> 类型的变量，这使得在处理字符串时更加方便。</p></li></ul></section></section><section class="chapter"><h3 id="-9hqol0_7" data-toc="-9hqol0_7">循环结构</h3><section class="chapter"><h4 id="while" data-toc="while">while 循环</h4><p id="-9hqol0_85"><code class="code" id="-9hqol0_93">while</code> 循环是Java中最基本的循环结构之一，用于在布尔表达式为 <code class="code" id="-9hqol0_94">true</code> 的情况下反复执行代码块。</p><p id="-9hqol0_86">语法格式：</p><div class="code-block" data-lang="java">
+while(布尔表达式){
+    // 循环体
+}
+</div><p id="-9hqol0_88">只要布尔表达式的结果为 <code class="code" id="-9hqol0_95">true</code> ，循环体就会被反复执行。因此，通常需要在循环体内修改控制条件以避免无限循环。</p><div class="code-block" data-lang="java">
+// 示例：计算1到100的和
+int i = 0;
+int sum = 0;
+while (i &lt;= 100) {
+    sum += i;
+    i++;
+}
+System.out.println(sum);  // 输出：5050
+</div><p id="-9hqol0_90"><span class="control" id="-9hqol0_96">死循环</span>： <code class="code" id="-9hqol0_97">while (true)</code> 表示一个永远不会结束的循环，通常在某些情况下会用到，例如：</p><div class="code-block" data-lang="java">
+while (true) {
+    // 这是一种死循环，通常用于：
+    // 1. 等待客户端连接
+    // 2. 定期检查任务
+    // 但要避免在正常开发中使用这种循环，因为它会导致程序无法结束。
+    break; // 可以使用 break 语句来终止死循环
+}
+</div></section><section class="chapter"><h4 id="do-while" data-toc="do-while">do-while 循环</h4><p id="-9hqol0_98"><code class="code" id="-9hqol0_102">do-while</code> 循环与 <code class="code" id="-9hqol0_103">while</code> 循环的区别在于，它会<span class="control" id="-9hqol0_104">先执行一次循环体</span> ，然后再判断条件是否成立。即使条件为 <code class="code" id="-9hqol0_105">false</code> ，循环体也会至少执行一次。</p><p id="-9hqol0_99">语法格式：</p><div class="code-block" data-lang="java">
+do {
+    // 循环体
+} while(布尔表达式);
+</div></section></section><section class="chapter"><h3 id="for" data-toc="for">For 循环</h3><p id="-9hqol0_106"><code class="code" id="-9hqol0_114">for</code> 循环是Java中最常用的循环结构之一，因为它结构紧凑、可读性强，特别适合在已知循环次数的情况下使用。</p><p id="-9hqol0_107">语法格式：</p><div class="code-block" data-lang="java">
+for(初始化; 布尔表达式; 迭代) {
+    // 循环体
+}
+</div><p id="-9hqol0_109">以下是 <code class="code" id="-9hqol0_115">while</code> 循环和 <code class="code" id="-9hqol0_116">for</code> 循环的等效例子：</p><div class="code-block" data-lang="java">
+// while 循环
+int a = 1;
+while (a &lt;= 100) {
+    System.out.println(a);
+    a += 5;  // 迭代
+}
+System.out.println(&quot;while 循环结束&quot;);
+
+// for 循环
+for (int i = 1; i &lt;= 100; i += 5) {
+    System.out.println(i);
+}
+System.out.println(&quot;for 循环结束&quot;);
+</div><p id="-9hqol0_111"><span class="control" id="-9hqol0_117"><code class="code" id="-9hqol0_118">for</code> 循环的优势</span>：</p><ul class="list _bullet" id="-9hqol0_112"><li class="list__item" id="-9hqol0_119"><p>初始化部分在循环开始时只执行一次。</p></li><li class="list__item" id="-9hqol0_120"><p>布尔表达式在每次循环前进行判断，如果为 <code class="code" id="-9hqol0_122">true</code> ，则执行循环体；如果为 <code class="code" id="-9hqol0_123">false</code> ，循环结束。</p></li><li class="list__item" id="-9hqol0_121"><p>迭代部分在每次循环结束后执行，可以用来控制循环的变化。</p></li></ul></section><section class="chapter"><h3 id="for_1" data-toc="for_1">增强for循环</h3><p id="-9hqol0_124">增强 <code class="code" id="-9hqol0_136">for</code> 循环是JDK 5引入的一种简化数组或集合遍历的方式，适用于遍历所有元素，而不需要使用索引来访问元素。</p><p id="-9hqol0_125"><span class="control" id="-9hqol0_137">语法格式</span>：</p><div class="code-block" data-lang="java">
+for(元素类型 变量名 : 集合或数组) {
+    // 循环体
+}
+</div><p id="-9hqol0_127">在增强 <code class="code" id="-9hqol0_138">for</code> 循环中， <span class="control" id="-9hqol0_139">每次迭代会将数组或集合中的一个元素赋值给变量</span> ，并执行循环体。</p><p id="-9hqol0_128">例如，下面的代码遍历并输出一个数组中的每个元素：</p><div class="code-block" data-lang="java">
+public class ScannerForPRO {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50}; // 定义了一个数组
+        for (int x : numbers) {
+            System.out.println(x); // 依次输出数组中的每个元素
+        }
+    }
+}
+</div><p id="-9hqol0_130">上述代码的等效传统 <code class="code" id="-9hqol0_140">for</code> 循环：</p><div class="code-block" data-lang="java">
+for (int i = 0; i &lt; numbers.length; i++) {
+    System.out.println(numbers[i]);
+}
+</div><p id="-9hqol0_132"><span class="control" id="-9hqol0_141">增强 <code class="code" id="-9hqol0_142">for</code> 循环的原理</span>：</p><ul class="list _bullet" id="-9hqol0_133"><li class="list__item" id="-9hqol0_143"><p>它的作用类似于遍历数组中的每个元素，并将当前遍历到的元素赋值给变量 <code class="code" id="-9hqol0_145">x</code> 。每次循环 <code class="code" id="-9hqol0_146">x</code> 会依次获取数组中的下一个元素。</p></li><li class="list__item" id="-9hqol0_144"><p>增强 <code class="code" id="-9hqol0_147">for</code> 循环适合用于<span class="control" id="-9hqol0_148">遍历数组或集合</span> ，而不需要关心索引或者手动控制循环。</p></li></ul><p id="-9hqol0_134"><span class="control" id="-9hqol0_149">优点</span>：</p><ul class="list _bullet" id="-9hqol0_135"><li class="list__item" id="-9hqol0_150"><p>增强 <code class="code" id="-9hqol0_152">for</code> 循环更加简洁易读，特别适用于只需要遍历数组或集合时。</p></li><li class="list__item" id="-9hqol0_151"><p>省去了手动控制循环变量和索引的复杂操作。</p></li></ul></section></section><section class="chapter"><h2 id="break-continue" data-toc="break-continue">break 和 continue 关键词</h2><section class="chapter"><h3 id="break" data-toc="break">break</h3><ul class="list _bullet" id="-9hqol0_156"><li class="list__item" id="-9hqol0_157"><p>break 在任何循环的主体部分，都可以控制循环流程。</p></li><li class="list__item" id="-9hqol0_158"><p>break 用于<span class="control" id="-9hqol0_160">强制退出循环</span> ,不执行循环中剩余的语句</p></li><li class="list__item" id="-9hqol0_159"><p>break 也用在switch语句中</p></li></ul></section><section class="chapter"><h3 id="continue" data-toc="continue">continue</h3><ul class="list _bullet" id="-9hqol0_161"><li class="list__item" id="-9hqol0_162"><p>continue 用于循环语句体中，用于<span class="control" id="-9hqol0_163">中止某次循环过程</span> ，即跳过循环体中尚未执行的语句，接着进行下一次判断是否执行下一次循环的判定。</p></li></ul></section><section class="chapter"><h3 id="goto-java" data-toc="goto-java">goto(非java)</h3><ul class="list _bullet" id="-9hqol0_164"><li class="list__item" id="-9hqol0_165"><p>goto 虽然很早就在程序设计语言中出现，尽管goto仍然是java的一个保留字，但并未在语言中得到正式使用。</p></li><li class="list__item" id="-9hqol0_166"><p>java中没有goto</p></li></ul></section></section><div class="last-modified">Last modified: 20 十月 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="java-scanneroi.html" class="navigation-links__prev">Java_ScannerOI</a><a href="java-三大结构-练习.html" class="navigation-links__next">Java_三大结构_练习</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>

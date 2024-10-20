@@ -1,0 +1,252 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-10-21T00:15:55.3513289"><title>Java_三大结构_练习 | Instance Name</title><script type="application/json" id="virtual-toc-data">[{"id":"0-100","level":0,"title":"题目：计算0-100之间的奇数和偶数的和","anchor":"#0-100"},{"id":"2-while-for-1-1000-5-3","level":0,"title":"题目2：用while或for循环输出1-1000之间能被5整除的数，并以每行输出3个的形式输出","anchor":"#2-while-for-1-1000-5-3"},{"id":"3","level":0,"title":"题目3：打印九九乘法表","anchor":"#3"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Java_三大结构_练习 | Instance Name"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Instance Name Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/java-三大结构-练习.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Java_三大结构_练习 | Instance Name"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/java-三大结构-练习.html#webpage",
+    "url": "writerside-documentation/java-三大结构-练习.html",
+    "name": "Java_三大结构_练习 | Instance Name",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "Instance Name Help"
+}</script><!-- End Schema.org --></head><body data-id="Java-三大结构-练习" data-main-title="Java_三大结构_练习" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Java-三大结构.md|Java_三大结构"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Instance Name  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Java-三大结构-练习" id="Java-三大结构-练习.md">Java_三大结构_练习</h1><section class="chapter"><h2 id="0-100" data-toc="0-100">题目：计算0-100之间的奇数和偶数的和</h2><section class="chapter"><h3 id="1_1" data-toc="1_1">以下是我给出的解答1：</h3><div class="code-block" data-lang="java">
+public static void main(String[] args) {
+int sumO= 0;
+for(int i = 0; i%2==0 &amp;&amp; i&lt;=100;i++){
+System.out.println(i);
+sumO+=i;
+}
+System.out.println(&quot;偶数和为：&quot;+sumJ);
+}
+</div><aside class="prompt" data-type="tip" data-title="" id="-k66h3g_15"><p id="-k66h3g_17">运行结果：0 错误，错误原因：i % 2 == 0 这个条件是在每次循环时判断i是否为偶数。如果i不是偶数，循环条件会直接结束。 <br></p></aside><section class="chapter"><h4 id="chatgpt" data-toc="chatgpt">以下是CHatGPT给出的解释：</h4><p id="-k66h3g_19">你在代码中遇到的问题是因为循环的条件和加法逻辑不太正确，导致没有真正对奇数进行求和。下面我来详细解释一下：</p><p id="-k66h3g_20">代码分析: 你写的<code class="code" id="-k66h3g_28">for</code>循环是这样的：</p><div class="code-block" data-lang="java">
+for(int i = 0; i &lt;= 100 &amp;&amp; i % 2 == 0; i++){
+</div><p id="-k66h3g_22">这部分有一个问题： <code class="code" id="-k66h3g_29">i % 2 == 0</code> 这个条件是在每次循环时判断<code class="code" id="-k66h3g_30">i</code>是否为偶数。如果<code class="code" id="-k66h3g_31">i</code>不是偶数，循环条件会直接结束，所以实际上这个循环只会执行一次（因为初始的<code class="code" id="-k66h3g_32">i=0</code>是偶数），后面循环就中断了。这样的话，程序只加了一个0，导致最后的结果是0。</p><p id="-k66h3g_23">解决方法: 要想正确计算<span class="control" id="-k66h3g_33">奇数</span>的和，你应该遍历0到100之间的所有数，然后只在<code class="code" id="-k66h3g_34">i</code>为奇数时执行加法。修改后的代码如下：</p><div class="code-block" data-lang="java">
+public class ScannerFor01 {
+    public static void main(String[] args) {
+        int sumJ = 0;
+        for(int i = 0; i &lt;= 100; i++){
+            if(i % 2 != 0){  // 这里判断是否为奇数
+                System.out.println(i);
+                sumJ += i;
+            }
+        }
+        System.out.println(&quot;奇数和为：&quot; + sumJ);
+    }
+}
+</div><p id="-k66h3g_25">关键点：</p><ol class="list _decimal" id="-k66h3g_26" type="1"><li class="list__item" id="-k66h3g_35"><p><span class="control" id="-k66h3g_37"><code class="code" id="-k66h3g_39">i % 2 != 0</code></span> ：用来判断<code class="code" id="-k66h3g_38">i</code>是否为奇数。如果为真，则进入循环体内进行求和。</p></li><li class="list__item" id="-k66h3g_36"><p><span class="control" id="-k66h3g_40">遍历 0 到 100</span> ：循环遍历从0到100之间的所有数，但只在遇到奇数时做累加操作。</p></li></ol><p id="-k66h3g_27">这样修改之后，程序会正确输出0到100之间的奇数和。</p></section></section><section class="chapter"><h3 id="2" data-toc="2">以下是我给出的正确解答2：</h3><div class="code-block" data-lang="java">
+package ScannerIO;
+
+/**
+ * @author 王丽杰
+ * @date 2024/10/20
+ * @className ScannerFor01
+ * @package ScannerIO
+ * @description 计算0-100之间的奇数和偶数的和
+ */
+public class ScannerFor01 {
+    public static void main(String[] args) {
+        int sumO = 0;
+        int sumJ = 0;
+        for(int i = 0; i&lt;=100 ;i++){
+            if(i%2==0) {
+                System.out.println(i);
+                sumO += i;
+            }
+
+        }
+        System.out.println(&quot;偶数和为：&quot;+sumO);
+        for(int i = 0; i&lt;=100;i++){
+            if(i%2!=0){
+                System.out.println(i);
+                sumJ +=i;
+            }
+
+        }
+        System.out.println(&quot;奇数和为：&quot;+sumJ);
+    }
+}
+
+</div></section><section class="chapter"><h3 id="1-for" data-toc="1-for">方法 1：for循环（优化版，只遍历奇数）</h3><div class="code-block" data-lang="java">
+public class OddSum {
+public static void main(String[] args) {
+int sumJ = 0;
+for (int i = 1; i &lt;= 100; i += 2) { // 每次递增2，直接跳到下一个奇数
+sumJ += i;
+}
+System.out.println(&quot;奇数和为：&quot; + sumJ);
+}
+}
+</div><p id="-k66h3g_43">解释：我们直接从1开始，每次递增2，这样就只遍历奇数，效率更高。</p></section><section class="chapter"><h3 id="2-while" data-toc="2-while">方法 2：while循环</h3><div class="code-block" data-lang="java">
+public class OddSum {
+public static void main(String[] args) {
+int sumJ = 0;
+int i = 1;
+while (i &lt;= 100) {
+sumJ += i;
+i += 2;  // 每次递增2，直接跳到下一个奇数
+}
+System.out.println(&quot;奇数和为：&quot; + sumJ);
+}
+}
+</div><p id="-k66h3g_45">解释：while循环通过手动控制变量i的递增，每次加2，遍历奇数并计算和。</p></section><section class="chapter"><h3 id="3-do-while" data-toc="3-do-while">方法 3：do-while循环</h3><div class="code-block" data-lang="java">
+public class OddSum {
+public static void main(String[] args) {
+int sumJ = 0;
+int i = 1;
+do {
+sumJ += i;
+i += 2;
+} while (i &lt;= 100);
+System.out.println(&quot;奇数和为：&quot; + sumJ);
+}
+}
+</div><p id="-k66h3g_47">解释：do-while循环与while类似，只不过它会先执行一次循环体内的语句，再进行条件判断。适合当你希望至少执行一次循环时使用。</p></section><section class="chapter"><h3 id="4-stream-api-java-8" data-toc="4-stream-api-java-8">方法 4：Stream API (Java 8 及以上)</h3><div class="code-block" data-lang="java">
+import java.util.stream.IntStream;
+
+public class OddSum {
+public static void main(String[] args) {
+int sumJ = IntStream.rangeClosed(0, 100)
+.filter(i -&gt; i % 2 != 0)  // 过滤奇数
+.sum();
+System.out.println(&quot;奇数和为：&quot; + sumJ);
+}
+}
+</div><p id="-k66h3g_49">解释：使用 Java 8 引入的Stream API，通过rangeClosed生成一个从0到100的数列，使用filter过滤出奇数，然后调用sum()进行求和。这种方式非常简洁。</p></section><section class="chapter"><h3 id="5" data-toc="5">方法 5：递归</h3><div class="code-block" data-lang="java">
+public class OddSum {
+public static void main(String[] args) {
+int sumJ = sumOdd(1, 100);
+System.out.println(&quot;奇数和为：&quot; + sumJ);
+}
+
+    public static int sumOdd(int start, int end) {
+        if (start &gt; end) {
+            return 0;
+        }
+        return start + sumOdd(start + 2, end);  // 每次递增2，递归处理奇数
+    }
+}
+</div><p id="-k66h3g_51">解释：使用递归的方式，从1开始，每次递增2直到到达100。递归方法优雅但可能效率不如循环，特别是在大规模数据时。</p></section><section class="chapter"><h3 id="6" data-toc="6">方法 6：数学公式法</h3><div class="code-block" data-lang="java">
+public class OddSum {
+public static void main(String[] args) {
+int n = (100 - 1) / 2 + 1;  // 奇数的个数
+int sumJ = n * n;  // 奇数和公式：n^2
+System.out.println(&quot;奇数和为：&quot; + sumJ);
+}
+}
+</div><p id="-k66h3g_53">解释：0到100之间的奇数为1, 3, 5, ..., 99，这是一个等差数列，首项为1，公差为2，项数为50。根据等差数列的求和公式，奇数和为前50项平方，即n^2。</p></section></section><section class="chapter"><h2 id="2-while-for-1-1000-5-3" data-toc="2-while-for-1-1000-5-3">题目2：用while或for循环输出1-1000之间能被5整除的数，并以每行输出3个的形式输出</h2><section class="chapter"><h3 id="1" data-toc="1">我的错误解法1：</h3><div class="code-block" data-lang="java">
+package ScannerIO;
+
+/**
+ * @author 王丽杰
+ * @date 2024/10/20
+ * @className ScannerFor02
+ * @package ScannerIO
+ * @description 用while或for循环输出1-1000之间能被5整除的数，并以每行输出3个的形式输出
+ */
+public class ScannerFor02 {
+    public static void main(String[] args) {
+        for(int i = 1 ; i&lt;=1000 ; i++){
+            if(i%5==0){
+                for(int j =1; j&lt;=3; j++){
+                    System.out.print(i+&quot;  &quot;);
+                    
+                }
+                System.out.println();
+
+            }
+        }
+    }
+}
+
+</div><section class="chapter"><h4 id="chatgpt_1" data-toc="chatgpt_1">ChatGPT讲解：</h4></section></section><section class="chapter"><h3 id="-k66h3g_55" data-toc="-k66h3g_55">题目分析</h3><p id="-k66h3g_64">题目的要求是：输出1到1000之间能被5整除的数，并且每行输出3个。</p><p id="-k66h3g_65">你使用了 <code class="code" id="-k66h3g_66">for</code> 循环和 <code class="code" id="-k66h3g_67">if</code> 语句来筛选1到1000之间能被5整除的数，并且尝试用嵌套的循环输出每行3个数。这个思路是正确的，但你在实现细节上出现了一些问题，导致程序的输出不符合题目的要求。</p></section><section class="chapter"><h3 id="-k66h3g_56" data-toc="-k66h3g_56">代码分析及错误解释</h3><div class="code-block" data-lang="java">
+public class ScannerFor02 {
+    public static void main(String[] args) {
+        for(int i = 1 ; i &lt;= 1000 ; i++){ // 遍历1到1000的每一个数
+            if(i % 5 == 0){ // 检查这个数是否能被5整除
+                for(int j = 1; j &lt;= 3; j++){ // 这里的问题出在嵌套的循环
+                    System.out.print(i + &quot;  &quot;); // 打印3次相同的数
+                }
+                System.out.println(); // 换行
+            }
+        }
+    }
+}
+</div><section class="chapter"><h4 id="-k66h3g_69" data-toc="-k66h3g_69">错误解释</h4><ol class="list _decimal" id="-k66h3g_70" type="1"><li class="list__item" id="-k66h3g_71"><p id="-k66h3g_73"><span class="control" id="-k66h3g_79">重复打印相同的数字</span>：</p><ul class="list _bullet" id="-k66h3g_74"><li class="list__item" id="-k66h3g_80"><p>你嵌套了一个 <code class="code" id="-k66h3g_81">for</code> 循环，在筛选出能被5整除的数后，使用 <code class="code" id="-k66h3g_82">j</code> 进行第二次循环。这个内部循环每次都会打印 <code class="code" id="-k66h3g_83">i</code> 这个数，而不是你想要的不同的三个数。因此，你的代码每次打印3个相同的数字，而不是3个不同的数字。</p></li></ul><p id="-k66h3g_75">举个例子：假设 <code class="code" id="-k66h3g_84">i=5</code> 时，满足 <code class="code" id="-k66h3g_85">i % 5 == 0</code> ，内层的 <code class="code" id="-k66h3g_86">for</code> 循环会运行3次，所以输出会是：</p><div class="code-block" data-lang="none">
+5  5  5  
+</div><p id="-k66h3g_77">但你真正想要的效果是：</p><div class="code-block" data-lang="none">
+5  10  15  
+</div></li><li class="list__item" id="-k66h3g_72"><p id="-k66h3g_87"><span class="control" id="-k66h3g_89">每行输出3个的逻辑错误</span>：</p><ul class="list _bullet" id="-k66h3g_88"><li class="list__item" id="-k66h3g_90"><p>题目的要求是每行输出3个数，而你是每找到一个能被5整除的数，直接重复打印3次。因此，需要修改程序的逻辑，不是每个数都打印3次，而是把符合条件的数按顺序排列，每3个数为一行。</p></li></ul></li></ol></section></section><section class="chapter"><h3 id="-k66h3g_57" data-toc="-k66h3g_57">正确的实现思路</h3><p id="-k66h3g_91">要解决这个问题，你需要：</p><ol class="list _decimal" id="-k66h3g_92" type="1"><li class="list__item" id="-k66h3g_93"><p><span class="control" id="-k66h3g_95">遍历1到1000之间的数字</span> ，筛选出能被5整除的数字。</p></li><li class="list__item" id="-k66h3g_94"><p><span class="control" id="-k66h3g_96">计数</span>每行已经打印了多少个数，当计数达到3时就换行。</p></li></ol></section><section class="chapter"><h3 id="-k66h3g_58" data-toc="-k66h3g_58">正确代码</h3><div class="code-block" data-lang="java">
+public class ScannerFor02 {
+    public static void main(String[] args) {
+        int count = 0; // 用于计数每行已经输出的数字个数
+        for(int i = 1 ; i &lt;= 1000 ; i++){ // 遍历1到1000的每个数
+            if(i % 5 == 0){ // 判断数是否能被5整除
+                System.out.print(i + &quot;  &quot;); // 输出这个数
+                count++; // 每输出一个数，计数器加1
+
+                if(count % 3 == 0){ // 如果已经输出了3个数，就换行
+                    System.out.println();
+                }
+            }
+        }
+    }
+}
+</div></section><section class="chapter"><h3 id="-k66h3g_59" data-toc="-k66h3g_59">解释</h3><ol class="list _decimal" id="-k66h3g_98" type="1"><li class="list__item" id="-k66h3g_99"><p id="-k66h3g_101"><span class="control" id="-k66h3g_103">计数变量<code class="code" id="-k66h3g_104">count</code></span> ：这个变量用于跟踪每行已经输出的数字个数。</p><ul class="list _bullet" id="-k66h3g_102"><li class="list__item" id="-k66h3g_105"><p>每找到一个能被5整除的数并输出后， <code class="code" id="-k66h3g_107">count</code> 加1。</p></li><li class="list__item" id="-k66h3g_106"><p>当 <code class="code" id="-k66h3g_108">count</code> 的值能被3整除时，说明已经输出了3个数字，所以调用 <code class="code" id="-k66h3g_109">System.out.println()</code> 换行。</p></li></ul></li><li class="list__item" id="-k66h3g_100"><p id="-k66h3g_110"><span class="control" id="-k66h3g_111">逻辑变化</span> ：内层循环被去除，只需要一个 <code class="code" id="-k66h3g_112">if</code> 语句控制是否换行，不再重复输出相同的数字。</p></li></ol></section><section class="chapter"><h3 id="-k66h3g_60" data-toc="-k66h3g_60">输出效果</h3><p id="-k66h3g_113">最终的输出效果是每行输出3个能被5整除的数字，类似：</p><div class="code-block" data-lang="none">
+5  10  15  
+20  25  30  
+35  40  45  
+...
+</div><p id="-k66h3g_115">这个代码更符合题目的要求，并且实现了正确的每行输出3个数的功能。</p></section><section class="chapter"><h3 id="-k66h3g_61" data-toc="-k66h3g_61">最后我写的正确代码：</h3><div class="code-block" data-lang="java">
+package ScannerIO;
+
+/**
+ * @author 王丽杰
+ * @date 2024/10/20
+ * @className ScannerFor02
+ * @package ScannerIO
+ * @description 用while或for循环输出1-1000之间能被5整除的数，并以每行输出3个的形式输出
+ */
+public class ScannerFor02 {
+    public static void main(String[] args) {
+        int con=0;
+        for(int i = 1 ; i&lt;=1000 ; i++){
+            if(i%5==0){
+                    System.out.print(i+&quot;  &quot;);
+                    con++;
+                }
+            if(con==3){
+                System.out.println();
+                con = 0;
+            }
+
+
+        }
+    }
+}
+
+</div></section></section><section class="chapter"><h2 id="3" data-toc="3">题目3：打印九九乘法表</h2><section class="chapter"><h3 id="-k66h3g_117" data-toc="-k66h3g_117">我一次写的正确代码：</h3><div class="code-block" data-lang="java">
+package ScannerIO;
+
+/**
+ * @author 王丽杰
+ * @date 2024/10/20
+ * @className ScannerFor03
+ * @package ScannerIO
+ * @description 打印九九乘法表
+ */
+public class ScannerFor03 {
+    public static void main(String[] args) {
+        for(int i = 1 ; i &lt; 10;i++){
+            for(int j = 1;j&lt;=i; j++){
+                System.out.print(j+&quot;*&quot;+i+&quot;=&quot;+i*j+&quot;  &quot;);
+            }
+            System.out.println();
+        }
+    }
+}
+
+</div></section></section><div class="last-modified">Last modified: 20 十月 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="java-三大结构.html" class="navigation-links__prev">Java_三大结构</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b419/app.js"></script></body></html>

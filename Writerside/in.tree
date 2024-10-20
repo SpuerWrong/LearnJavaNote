@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="in"
+                 name="Instance Name"
+                 start-page="Java-One-base.md">
+
+    <toc-element topic="Java-One-base.md"/>
+    <toc-element topic="Java-ScannerOI.md"/>
+    <toc-element topic="Java-三大结构.md">
+        <toc-element topic="Java-三大结构-练习.md"/>
+    </toc-element>
+</instance-profile>
