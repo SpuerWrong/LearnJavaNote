@@ -14,4 +14,5 @@
     <toc-element topic="Java-方法.md">
         <toc-element topic="Java-方法-练习.md"/>
     </toc-element>
+    <toc-element topic="Java-数组.md"/>
 </instance-profile>
