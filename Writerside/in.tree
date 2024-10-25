@@ -6,6 +6,7 @@
                  name="Instance Name"
                  start-page="Java-One-base.md">
 
+    <toc-element topic="Java-抽象类和接口.md"/>
     <toc-element topic="Java-OOP.md"/>
     <toc-element topic="Java-One-base.md"/>
     <toc-element topic="Java-ScannerOI.md"/>
